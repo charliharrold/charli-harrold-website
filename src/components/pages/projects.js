@@ -1,47 +1,163 @@
-import React from "react";
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'; import "./projectstyles.css";
 
+const removeLinkStyling = {
+    textDecoration: 'none',
+    color: '#000000',
+}
 
 const Projects = () => {
     return (
-        <div>
+        <Container>
+            <h2 style={{textAlign: 'center'}}>Projects!</h2>
+            <br/>
+            <Row>
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="https://uvicwecs.ca/" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>WECS Website</Card.Title>
+                                <Card.Text>
+                                    A website I created and manage for the Women in Engineering and Computer science club at the University of Victoria.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    React
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    JavaScript
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    CSS
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    HTML
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    Ongoing
+                                </button>
 
-            <h1>Welcome to my projects page!</h1>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="https://github.com/charliharrold/calculator-example" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>Overcomplicated Calculator</Card.Title>
+                                <Card.Text>
+                                    A proof of concept project I created as a base design for a skills workshop to be run by WECS.
+                                    The project involves designing a basic calculator interface and connecting it to a back end where calculations are done.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    React
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    JavaScript
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    Python
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    Flask
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    Complete
+                                </button>
 
-            <h3>Website</h3>
-            <p>
-                I made this website myself (with lots of help from the internet of course) using JavaScript, CSS, and HTML.
-                Prior to making this website I had no real experience with any of these languages, but I had heard about React and decided that it
-                was something worth learning. So, I threw myself into the deep end! It was quite difficult to get started since the development process
-                felt quite different to what I was used to in other projects I've worked on but it was a valuable learning experience.
-                I imagine that the code I wrote isn't the best, but this is an ongoing project, and as I learn more I will go back and update
-                things to be better! But, for a first attempt, I'm pretty proud of it!
-            </p>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
 
-            <h3>Napier Commission Analysis</h3>
-            <p>
-                In third year I took a class about Scottish history which was an incredible learning experience, especially since I was born and grew up in Scotland.
-                The Napier Commission was set up as a response to the unrest in the Highlands of Scotland due to... a lot of things, but
-                the core of the issue was the Highland Clearances. The Napier Commission stood out to me because it is one of the only times
-                when we hear from the Gaelic people themselves. After attending the 2024 Digital Humanities Summer Institute course
-                on natural language processing, I realized that my programming skills could be used in a humanities context.
-                So, I decided that I would do some analysis of the Napier Commission to determine the main concerns of the people.
-                We already know that the issues were lack of food, expensive rents, and the stealing of land, but looking at the quantitative analysis
-                of the Napier Commission shows just how much the people cared about these things.
-                <br></br>
-                I want to continue this project in an attempt to analyze how men and women interacted differently with their
-                environment.
-            </p>
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="https://github.com/charliharrold/ssi_project" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>Simple Shell Interpreter</Card.Title>
+                                <Card.Text>
+                                    Building from an assignment for CSC 360: Operating Systems. I implemented features such as using arrows for command history and command completion.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    C
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    In Progress
+                                </button>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
+            </Row>
 
-            <h3>Ocean Networks Canada API</h3>
-            <p>
-                I participated in the 2024 Digital Humanities Summer Institute course about APIs in Python, and used ONC's API as
-                a case study.
-                I'm so glad that I decided to attend this course because the idea of APIs was really intimidating to me before.
-                Getting into the ONC API was really hard! It is a wonderful service, but it's really hard to start with because there are
-                so many possibilities. I managed to get some cool graphs out of it, but it did prove to be quite the process.
-            </p>
+            <br/>
 
-        </div>
+            <Row>
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>Napier Commission - Natural Language Processing</Card.Title>
+                                <Card.Text>
+                                    Extracing text from a historical document and processing it using techniques for natural language.
+                                    I then created graphs and other figures to show sentiment analysis.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    Python
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    In Progress
+                                </button>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
+
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>WECS Logo - Computer Graphics</Card.Title>
+                                <Card.Text>
+                                    This project hasn't been started yet, but I plan to create a gif of the WECS logo rotating using rasterization learned in CSC 305: Computer Graphics.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    C++
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    Not Yet Started
+                                </button>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
+
+                <Col className="d-flex justify-content-center align-items-center">
+                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                        <Card.Link href="" style={removeLinkStyling}>
+                            <Card.Body>
+                                <Card.Title>Graph Algorithm Simulations</Card.Title>
+                                <Card.Text>
+                                    I plan to create visualizations for graph algorithms presented in CSC 225 and 226.
+                                </Card.Text>
+                                <button className='tech-btn' size="sm">
+                                    React
+                                </button>
+                                <button className='tech-btn' size="sm">
+                                    D3
+                                </button>
+                                <button className='btn-status' size="sm">
+                                    Not Yet Started
+                                </button>
+                            </Card.Body>
+                        </Card.Link>
+                    </Card>
+                </Col>
+            </Row>
+
+        </Container >
     );
 };
 

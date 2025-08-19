@@ -1,0 +1,39 @@
+.card-shadow {
+  box-shadow: 0 10px 10px rgba(139, 125, 244, 0.2); /* Horizontal offset, vertical offset, blur, color */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(28, 0, 166, 0.2) !important;  /* Increase glow on hover */
+}
+
+.tech-btn {
+    padding: 5px 10px;
+    background-color: #B3E5FF;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.tech-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.btn-status {
+    padding: 5px 10px;
+    background-color: #32b5fb;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.btn-status:hover {
+    transform: translateY(-2px);
+}
