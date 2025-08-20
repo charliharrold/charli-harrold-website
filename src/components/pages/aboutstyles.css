@@ -1,0 +1,8 @@
+.about-card-shadow {
+  box-shadow: 0 10px 10px rgba(224, 93, 203, 0.2); /* Horizontal offset, vertical offset, blur, color */
+}
+
+.about-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 10px rgba(255, 45, 164, 0.2) !important;  /* Increase glow on hover */
+}

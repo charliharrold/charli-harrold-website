@@ -1,7 +1,8 @@
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'; import "./projectstyles.css";
+import Col from 'react-bootstrap/Col'; 
+import "./projectstyles.css";
 
 const removeLinkStyling = {
     textDecoration: 'none',
@@ -15,7 +16,7 @@ const Projects = () => {
             <br/>
             <Row>
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="https://uvicwecs.ca/" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>WECS Website</Card.Title>
@@ -43,7 +44,7 @@ const Projects = () => {
                     </Card>
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="https://github.com/charliharrold/calculator-example" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>Overcomplicated Calculator</Card.Title>
@@ -73,7 +74,7 @@ const Projects = () => {
                 </Col>
 
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="https://github.com/charliharrold/ssi_project" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>Simple Shell Interpreter</Card.Title>
@@ -96,7 +97,7 @@ const Projects = () => {
 
             <Row>
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>Napier Commission - Natural Language Processing</Card.Title>
@@ -116,7 +117,7 @@ const Projects = () => {
                 </Col>
 
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>WECS Logo - Computer Graphics</Card.Title>
@@ -135,7 +136,7 @@ const Projects = () => {
                 </Col>
 
                 <Col className="d-flex justify-content-center align-items-center">
-                    <Card className="card-shadow" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
+                    <Card className="project-card-shadow project-card" style={{ width: '18rem', backgroundColor: '#E0F7FF', align: 'center' }}>
                         <Card.Link href="" style={removeLinkStyling}>
                             <Card.Body>
                                 <Card.Title>Graph Algorithm Simulations</Card.Title>

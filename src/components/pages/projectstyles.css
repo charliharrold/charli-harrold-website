@@ -1,8 +1,8 @@
-.card-shadow {
+.project-card-shadow {
   box-shadow: 0 10px 10px rgba(139, 125, 244, 0.2); /* Horizontal offset, vertical offset, blur, color */
 }
 
-.card:hover {
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 10px rgba(28, 0, 166, 0.2) !important;  /* Increase glow on hover */
 }
